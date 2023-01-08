@@ -1,7 +1,9 @@
 :root {
     --lightBlue: #a0bfe2;
+    --darkerBlue: rgb(87, 125, 231);
     --greenish: #5d916d;
     --darkish: rgb(0, 0, 0);
+    --purp: rgb(107, 50, 182);
 }
 
 body {
@@ -28,6 +30,27 @@ header h1 {
     padding: 15px 30px;
     margin: 0;
     line-height: 1.25;
+    border-radius: 8px;
+}
+
+
+h3 {
+    background-color: var(--greenish);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 nav {
@@ -38,7 +61,7 @@ nav {
 }
 
 nav a {
-    color: rgb(87, 125, 231);
+    color: var(--darkerBlue);
     padding: 10px 10px;
     transition: all 0.25s ease-in;
     margin-right: 10px;
@@ -46,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(107, 50, 182);
+    color: var(--purp);
 }
 
 .banner {
@@ -56,12 +79,38 @@ nav a:hover {
     min-height: fit-content;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .banner h2 {
     margin: 0;
-    padding: 70px 150px;
+    padding: 60px 10px;
+    font-size: 30px;
 }
 
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 
+.contact address a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: all 0.25s ease-in;
+    display: inline-block;
+    font-size: 18px;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    background-color: rgb(94, 124, 223);
+    border-radius: 8px;
+}
+
+.contact address a:hover {
+    background-size: 100% 88%;
+    background-color: var(--lightBlue);
+    color: var(--purp);
+}
