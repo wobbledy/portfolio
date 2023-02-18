@@ -4,6 +4,7 @@
     --greenish: #5d916d;
     --darkish: rgb(0, 0, 0);
     --purp: rgb(107, 50, 182);
+    --anotherBlue: rgb(94, 124, 223);
 }
 
 body {
@@ -45,6 +46,12 @@ h3 {
     padding: 5px;
 }
 
+h4 {
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+}
+
 p {
     display: flex;
     flex-direction: row;
@@ -84,7 +91,7 @@ nav a:hover {
 
 .banner h2 {
     margin: 0;
-    padding: 60px 10px;
+    padding: 60px 20px 10px;
     font-size: 30px;
 }
 
@@ -105,12 +112,34 @@ nav a:hover {
     font-size: 18px;
     background-size: 100% 0.2em;
     background-position: bottom;
-    background-color: rgb(94, 124, 223);
+    background-color: var(--anotherBlue);
     border-radius: 8px;
 }
 
 .contact address a:hover {
     background-size: 100% 88%;
+    background-color: var(--lightBlue);
+    color: var(--purp);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item h3 {
+    color: black;
+    transition: all 0.25s ease-in;
+    display: flex;
+    padding: 5px;
+    background-color: var(--anotherBlue);
+    
+}
+
+.flex-item h3:hover {
+    background-size: 88% 88%;
     background-color: var(--lightBlue);
     color: var(--purp);
 }
